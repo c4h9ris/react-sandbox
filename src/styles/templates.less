@@ -1,0 +1,232 @@
+#templates {
+  margin-top : 95px;
+
+  #templates_header {
+    #description {
+  	   margin-top : 30px;
+    }
+  }
+
+  #categories_content {
+  	display:block;
+  	margin : 70px auto;
+
+    div {
+    	font-family: "Platform Web-Light", Verdana, Arial, sans-serif;
+      font-style: normal;
+      font-size : 20px;
+      line-height: 40px;
+      cursor: pointer;
+      color: #797e89;
+    	padding: 3px 24px;
+     }
+  }
+
+  #templates_content {
+    .template {
+    	margin-bottom : 50px;
+    	display: inline-block;
+    }
+    .selected {
+    	font-weight: bold;
+    	background-color: #f2f2f2;
+    	-webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      border-radius: 50px;
+    }
+  }
+}
+#template_preview_popup {
+  #popup-content {
+  	z-index:20; /* shuld be above .popup .background....*/
+  }
+  .grid_area {
+    .veil {
+    	position: absolute;
+    	margin-top: 14px;
+    	width: 990px;
+    	height: 448px;
+    	background: linear-gradient(to right, #3A3F55, rgba(0,0,0,0), #3A3F55);
+    }
+    .grid {
+    	position: absolute;
+    	width: 990px;
+    	height: 474px;
+    	overflow: hidden;
+
+      .grid_item {
+      	position: absolute;
+      	width: 188px;
+      	height: 143px;
+      	background-image: url('/images/main/sprites.png');
+      	background-position: 0px -44px;
+      	background-repeat: no-repeat;
+
+        img {
+        	margin-top: 2px;
+        	margin-left: 3px;
+        	width: 182px;
+        	height: 137px;
+        }
+      }
+      .row_1 {
+      	margin-top: 14px;
+      }
+      .row_2 {
+      	margin-top: 166px;
+      }
+      .row_3 {
+      	margin-top: 318px;
+      }
+      .column_0 {
+      	margin-left: 12px;
+      }
+      .column_1 {
+      	margin-left: 209px;
+      }
+      .column_2 {
+      	margin-left: 406px;
+      }
+      .column_3 {
+      	margin-left: 603px;
+      }
+      .column_4 {
+      	margin-left: 800px;
+      }
+      .grid_item_link {
+      	position: absolute;
+      	width: 188px;
+      	height: 143px;
+        .link {
+        	width: 188px;
+        	height: 143px;
+        	display: block;
+        	background-color:rgba(0, 0, 0, 0);
+          .legend {
+          	position: absolute;
+          	margin-left: 3px;
+          	margin-top: 103px;
+          	width: 182px;
+          	height: 36px;
+          	background-color: #c9cc38;
+            .title {
+            	margin-left: 7px;
+            	font-size: 24px;
+            	line-height: 36px;
+            	color: #ffffff;
+            	float: left;
+            }
+            .icon {
+            	margin-right: 9px;
+            	width: 25px;
+            	height: 36px;
+            	background-image: url('/images/main/sprites.png');
+            	background-position: -708px -16px;
+            	background-repeat: no-repeat;
+            	float: right;
+            }
+          }
+        }
+      }
+      .expand_view {
+      	position: absolute;
+      	top: -10px;
+      	left: 171px;
+      	width: 28px;
+      	height: 28px;
+      	background-image: url('/images/main/sprites.png');
+      	background-position: -846px -85px;
+      	background-repeat: no-repeat;
+      }
+      .remove_from_shortlist {
+      	position: absolute;
+      	top: -10px;
+      	left: 171px;
+      	width: 28px;
+      	height: 28px;
+      	background-image: url('/images/main/sprites.png');
+      	background-position: -916px -85px;
+      	background-repeat: no-repeat;
+      }
+    }
+  }
+  .frame {
+  	position: fixed;
+  	top: 73px;
+  	z-index:  15;
+  	width: 100%;
+    max-width: 990px;
+  	height: 900px;
+
+  	/*
+  	These are overiding the default popup styles found elsewhere on MF.
+  	Consider standardising all popups
+  	*/
+  	background: rgba(0,0,0,0);
+  	box-shadow: 0px 0px 0px 0px #000000;
+    -webkit-box-shadow: 0px 0px 0px 0px #000000;
+    -moz-box-shadow: 0px 0px 0px 0px #000000;
+    -o-box-shadow: 0px 0px 0px 0px #000000;
+    .select_popup_container {
+    	position: absolute;
+    	width: 100%;
+    	height: 100px;
+    	color: white;
+    }
+    .close_button {
+    	position: absolute;
+    	right: 10px;
+    	top: 80px;
+    	width: 13px;
+    	height: 13px;
+    	background-image: url('/images/main/popup_close.png');
+    	background-repeat: no-repeat;
+    }
+    .btn{
+    	width: 220px;
+    	font-size : 25px;
+      padding-bottom: 60px;
+    	margin: 0 auto;
+        display: block;
+    }
+    .handle_shortlist {
+    	position: absolute;
+    	left: 25px;
+    	top: -20px;
+    	height: 18px;
+    	font-weight: bold;
+    	font-size: 13px;
+    }
+  }
+  #iframeContainer {
+  	margin-top: 100px;
+    width : 100%;
+  	height : 900px;
+    #previewIframe {
+    	position:relative;
+    	width:990px;
+    	height:900px;
+    	background: black;
+    }
+  }
+  .navigation {
+    a {
+    	position: absolute;
+    	width: 60px;
+    	height: 63px;
+    	margin-top: 207px;
+    	background-repeat: no-repeat;
+    	z-index: 16;
+    }
+    .previous {
+      margin-left: 0!important;
+    	left: 10%;
+    	background-image: url('/images/main/Icon-TemplateGrid-Arrow-Left.png');
+    }
+    .next {
+      margin-left: 0!important;
+    	right: 10%;
+    	background-image: url('/images/main/Icon-TemplateGrid-Arrow-Right.png');
+    }
+  }
+}

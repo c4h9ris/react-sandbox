@@ -1,0 +1,492 @@
+/*#################*/
+/*## STYLE RESET ##*/
+/*#################*/
+
+a, blockquote, body, div, h1, h2, h3, h4, h5, h6, html, img, input, li, p, span, ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+blockquote {
+  quotes: none;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote:after, blockquote:before {
+  content: '';
+  content: none;
+}
+
+ul {
+  list-style: none;
+}
+
+:focus {
+  outline: 0 none;
+}
+
+/*############*/
+/*## GLOBAL ##*/
+/*############*/
+
+blockquote, h1, h2, h3, h4, h5, h6, li, p, ul {
+  color: #777e89;
+  font-family: Verdana, Arial, sans-serif;
+  font-weight: normal;
+}
+
+a, li, span {
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+a, a:active, a:hover, a:link, a:visited {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input {
+  font-family: Verdana, Arial, sans-serif;
+  font-weight: normal;
+}
+
+.hidden_at_start {
+  display: none;
+}
+
+.placeholder_text {
+  display: none;
+}
+
+/*######################*/
+/*## FONTS DEFINITION ##*/
+/*######################*/
+
+@font-face {
+  font-family: 'Platform Web-Light';
+  src: url('/css/fonts/platform_web_light.eot');
+  src: url('/css/fonts/platform_web_light.eot?#iefix') format('embedded-opentype'),
+       url('/css/fonts/platform_web_light.woff') format('woff'),
+       url('/css/fonts/platform_web_light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: 'Platform Web-Medium';
+  src:url('/css/fonts/platform_web_medium.eot');
+  src:url('/css/fonts/platform_web_medium.eot?#iefix') format('embedded-opentype'),
+      url('/css/fonts/platform_web_medium.woff') format('woff'),
+      url('/css/fonts/platform_web_medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: 'Platform Web-Regular';
+  src:url('/css/fonts/platform_web_regular.eot');
+  src:url('/css/fonts/platform_web_regular.eot?#iefix') format('embedded-opentype'),
+      url('/css/fonts/platform_web_regular.woff') format('woff'),
+      url('/css/fonts/platform_web_regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+.default-font {
+  font-family: Verdana, Arial, sans-serif;
+}
+
+.light_text {
+  font-family: "Platform Web-Light", Verdana, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300 !important;
+  font-stretch: normal;
+}
+
+.medium_text {
+  font-family: "Platform Web-Medium", Verdana, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-stretch: normal;
+}
+
+.regular_text, .regular_text h3 {
+  font-family: "Platform Web-Regular", Verdana, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-stretch: normal;
+}
+
+.safe_area {
+  width: 990px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button_title {
+	line-height:32px;
+}
+
+.sub-text {
+  color: #797e89;
+}
+
+/*######################*/
+/*## GLOBAL: ITEM BOX ##*/
+/*######################*/
+
+.item_box {
+  margin-top: 1px;
+}
+
+.item_box .background {
+  position: absolute;
+  width: 990px;
+  z-index: -1;
+}
+
+.item_box .background .top {
+  width: 990px;
+  height: 3px;
+  background-image: url('/images/main/sprites.png');
+  background-position: 0px -189px;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.item_box .background .middle {
+  width: 990px;
+  background-color: #ffffff;
+  display: block;
+}
+
+.item_box .background .bottom {
+  width: 990px;
+  height: 3px;
+  background-image: url('/images/main/sprites.png');
+  background-position: 0px -194px;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+/*#############*/
+/*## WRAPPER ##*/
+/*#############*/
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+#wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -138px;
+}
+
+#push {
+  height: 138px;
+}
+
+/*############*/
+/*## HEADER ##*/
+/*############*/
+
+.slide {
+  -webkit-transition: all .2s cubic-bezier(.02, .01, .47, 1);
+  -moz-transition: all .2s cubic-bezier(.02, .01, .47, 1);
+  -o-transition: all .2s cubic-bezier(.02, .01, .47, 1);
+  transition: all .4s cubic-bezier(.02, .01, .47, 1);
+}
+
+.submit a .title {
+	line-height:42px;
+}
+
+#header_items .call_to_action_button {
+  width: 253px;
+  height: 42px;
+  background-image: url('/images/main/sprites.png');
+  background-position: -337px 0px;
+}
+
+#header_items .call_to_action_button .button_title {
+  margin-left: 21px;
+  margin-top: 0px;
+  line-height:36px;
+  font-size: 23px;
+  color: #ffffff;
+}
+
+#header_items .menu_button {
+  background-image: url('/images/main/Icon-Header-BurgerMenu.png');
+  width: 26px;
+  height: 20px;
+  margin: 25px 20px;
+}
+
+#header_items .signup_button_header {
+  width: 90px;
+  height: 35px;
+  margin-left: 18px;
+  background-color: #00B095;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
+}
+
+#header_items .logged_in {
+  float: right;
+  margin: 20px 150px 20px 20px;
+  position: relative;
+}
+
+#header_items .logged_in p {
+  margin: 0 5px;
+}
+
+#header_items .logged_in .avatar {
+  width: 30px;
+  height: 30px;
+  float: left;
+}
+
+#header_items .logged_in .username {
+  font-size: 18px;
+  color: white;
+  float: right;
+  line-height: 30px;
+}
+
+#header_items .logged_in .logout_button .button_title {
+  margin-top: -2px;
+  font-size: 21px;
+  color: #777e89;
+  float: left;
+}
+
+#header_items .logged_in .logout_button .icon {
+  position: absolute;
+  width: 11px;
+  height: 6px;
+  margin: 8px 0px 0px 4px;
+  background-image: url('/images/main/sprites.png');
+  background-position: -968px -143px;
+  background-repeat: no-repeat;
+  top:13px;
+  left:75px;
+}
+
+#header_items .logged_in .menu_dropdown {
+  position: absolute;
+  margin: 22px 0px 0px -63px;
+  width: 154px;
+  z-index: 7;
+  line-height:32px;
+}
+
+#header_items .logged_in .menu_dropdown li a {
+  width: 154px;
+  font-size: 24px;
+  color: #ffffff;
+  background-image: url('/images/main/sprites.png');
+  background-repeat: no-repeat;
+  display: block;
+}
+
+#header_items .logged_in .menu_dropdown li a .title {
+  position: absolute;
+  margin-left: 10px;
+}
+
+#header_items .logged_in .menu_dropdown .top {
+  height: 55px;
+  background-position: -492px -778px;
+}
+
+#header_items .logged_in .menu_dropdown .top .title {
+  margin-top: 20px;
+}
+
+#header_items .logged_in .menu_dropdown .middle {
+  height: 38px;
+  background-position: -492px -793px;
+}
+
+#header_items .logged_in .menu_dropdown .middle .title {
+  margin-top: 3px;
+}
+
+#header_items .logged_in .menu_dropdown .bottom {
+  height: 42px;
+  background-position: -492px -806px;
+}
+
+#header_items .logged_in .menu_dropdown .bottom .title {
+  margin-top: 3px;
+}
+
+/*###############*/
+/*## SITE MENU ##*/
+/*###############*/
+#page {
+  position: relative;
+  overflow-x: hidden;
+}
+
+#site_menu {
+  z-index: 99;
+  background: #1d1f2b;
+  position: fixed;
+  display: block;
+  width: 387px;
+  height : 100%;
+  top: 0;
+  right: -387px;
+  padding-top: 70px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#site_menu #site_menu_inner {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+#site_menu #site_menu_inner .menu {
+  margin-bottom: 27px;
+}
+
+#site_menu #site_menu_inner .menu .site_menu_item {
+  margin-bottom: 10px;
+}
+
+/*think about chaning the default font for the homepage*/
+#site_menu #site_menu_inner .menu a,
+#site_menu #site_menu_inner p {
+  font-family: "Platform Web-Light", Verdana, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300 !important;
+  font-stretch: normal;
+}
+
+#site_menu #site_menu_inner .menu.large_text a {
+  color: white;
+  font-size: 20px;
+}
+
+#site_menu #site_menu_inner .menu.larger_text a {
+  color: white;
+  font-size: 30px;
+}
+
+#site_menu #site_menu_inner .menu.larger_text a.green_link {
+  color: #00b195;
+}
+
+#site_menu #site_menu_inner .menu a,
+#site_menu #site_menu_inner p {
+  color: #3a3F56;
+  font-size: 15px;
+}
+
+#site_menu #site_menu_inner #social_links {
+  margin-top: 15px;
+}
+
+#site_menu #site_menu_inner #social_links a {
+  margin-right: 13px;
+}
+
+
+
+
+/*#####################*/
+/*# FOOTER INFO BLOCK #*/
+/*#####################*/
+
+#footer_info {
+	background-color: #3A3F56;
+	height: 65px;
+}
+#footer_info .content{
+	margin: 0 auto;
+	width:972px;
+	font-size:12px;
+	color:#69707a;
+}
+#footer_info .fhr{
+	width:100%;
+	clear:both;
+	height:4px;
+	overflow:hidden;
+	line-height:1px;
+	background:url('/images/main/sprites.png') repeat-x 0px -1304px;
+	margin-bottom:10px;
+}
+#footer_info .text{
+	width:440px;
+	float:left;
+	margin-right:60px;
+}
+#footer_info .company{
+	width:135px;
+	float:left;
+	margin-right:37px;
+}
+#footer_info .address{
+	width:140px;
+	float:left;
+}
+#footer_info .cb{
+	clear:both;
+}
+
+.footer_description{
+	position:absolute;
+	font-size:12px;
+	color:#69707a;
+	width:100%;
+}
+.footer_description p{
+	margin: 0 auto;
+	width:972px;
+	position:relative;
+	top:14px;
+}
+a.greylink{
+	color:#777E89;
+}
+
+#ga_remarketing{
+	height:1px;
+	width:1px;
+	overflow:hidden;
+	position:absolute;
+	bottom:1px;
+	left:1px;
+}
+
+iframe {
+    border: none;
+}
+
+a.oval_button:hover {
+  background-color: white;
+  color: #223472;
+}
